@@ -1,18 +1,22 @@
 ✅ Instructions to Run Locally
 1. Clone the repository
+2. 
 git clone https://github.com/Ramakrishna7792/meeting-scheduler-agent.git
+
 cd meeting-scheduler-agent
 
-2. Create and activate virtual environment
+3. Create and activate virtual environment
 
 Windows
 
 python -m venv venv
+
 venv\Scripts\activate
 
 Mac/Linux
 
 python3 -m venv venv
+
 source venv/bin/activate
 
 3. Install all project dependencies

@@ -1,0 +1,39 @@
+2025-11-29 17:18:25,795 ERROR meeting_agent PROPOSE ERROR: module 'dateparser' has no attribute 'search'
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\meeting-scheduler-agent\backend\app\main.py", line 28, in propose
+    data = propose_slots(req.prompt)
+  File "C:\Users\HP\Desktop\meeting-scheduler-agent\backend\app\agent.py", line 42, in propose_slots
+    start_dt = find_date_window(prompt)
+  File "C:\Users\HP\Desktop\meeting-scheduler-agent\backend\app\agent.py", line 30, in find_date_window
+    result = dateparser.search.search_dates(text, settings=settings)
+             ^^^^^^^^^^^^^^^^^
+AttributeError: module 'dateparser' has no attribute 'search'
+
+2025-11-29 17:21:34,599 ERROR meeting_agent CONFIRM ERROR: Missing token_dict
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\meeting-scheduler-agent\backend\app\main.py", line 49, in confirm
+    tool = GoogleCalendarTool(token)
+  File "C:\Users\HP\Desktop\meeting-scheduler-agent\backend\app\calendar_tool.py", line 23, in __init__
+    raise ValueError("Missing token_dict")
+ValueError: Missing token_dict
+2025-11-29 17:21:41,972 ERROR meeting_agent CONFIRM ERROR: Missing token_dict
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\meeting-scheduler-agent\backend\app\main.py", line 49, in confirm
+    tool = GoogleCalendarTool(token)
+  File "C:\Users\HP\Desktop\meeting-scheduler-agent\backend\app\calendar_tool.py", line 23, in __init__
+    raise ValueError("Missing token_dict")
+ValueError: Missing token_dict
+2025-11-29 17:21:47,894 ERROR meeting_agent CONFIRM ERROR: Missing token_dict
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\meeting-scheduler-agent\backend\app\main.py", line 49, in confirm
+    tool = GoogleCalendarTool(token)
+  File "C:\Users\HP\Desktop\meeting-scheduler-agent\backend\app\calendar_tool.py", line 23, in __init__
+    raise ValueError("Missing token_dict")
+ValueError: Missing token_dict
+2025-11-29 17:21:58,507 ERROR meeting_agent CONFIRM ERROR: Missing token_dict
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\meeting-scheduler-agent\backend\app\main.py", line 49, in confirm
+    tool = GoogleCalendarTool(token)
+  File "C:\Users\HP\Desktop\meeting-scheduler-agent\backend\app\calendar_tool.py", line 23, in __init__
+    raise ValueError("Missing token_dict")
+ValueError: Missing token_dict

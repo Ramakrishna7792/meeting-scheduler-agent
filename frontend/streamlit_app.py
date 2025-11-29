@@ -155,9 +155,7 @@ if opts:
                 # small delay to let UI update before continuing
                 time.sleep(0.25)
 
-# footer for judges
-st.markdown("---")
-st.caption("Tip for judges: Demo mode uses a server-shared calendar so judges do not need to log in. For production: enable Google Calendar API, add OAuth client credentials in .env, and set DEMO_MODE=false. Check backend logs for details.")
+
 
 # add a retry / clear history area
 st.markdown("### ⚙️ Controls")
@@ -183,6 +181,6 @@ with cols[1]:
         st.session_state.confirmed = False
         st.success("Conversation cleared.")
 with cols[2]:
-    if st.button("📝 Save conversation (local)"):
+    if st.button("📝 Save conversation"):
         st.success("Saved to local session (in memory).")
 
